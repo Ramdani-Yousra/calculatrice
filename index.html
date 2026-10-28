@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="calculatrice" aria-label="Calculatrice">
+        <section class="ecran" aria-live="polite">
+            <div class="historique" id="historique"></div>
+            <div class="resultat" id="resultat">0</div>
+        </section>
+
+        <section class="touches">
+            <button class="touche fonction" data-action="clear">C</button>
+            <button class="touche fonction" data-action="backspace" aria-label="Retour arrière">⌫</button>
+            <button class="touche operateur" data-operator="/">÷</button>
+
+            <button class="touche" data-digit="7">7</button>
+            <button class="touche" data-digit="8">8</button>
+            <button class="touche" data-digit="9">9</button>
+            <button class="touche operateur" data-operator="*">×</button>
+
+            <button class="touche" data-digit="4">4</button>
+            <button class="touche" data-digit="5">5</button>
+            <button class="touche" data-digit="6">6</button>
+            <button class="touche operateur" data-operator="-">−</button>
+
+            <button class="touche" data-digit="1">1</button>
+            <button class="touche" data-digit="2">2</button>
+            <button class="touche" data-digit="3">3</button>
+            <button class="touche operateur" data-operator="+">+</button>
+
+            <button class="touche zero" data-digit="0">0</button>
+            <button class="touche" data-action="decimal">,</button>
+            <button class="touche egal" data-action="equals">=</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
